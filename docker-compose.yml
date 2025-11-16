@@ -1,0 +1,15 @@
+services:
+  formatter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    networks:
+      - formatter_network
+    restart: always
+
+networks:
+  formatter_network:
+    driver: bridge
+      

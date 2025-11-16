@@ -1,0 +1,6 @@
+@formatter_HostAddress = http://localhost:5102
+
+GET {{formatter_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
